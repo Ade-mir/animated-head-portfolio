@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Doe Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
-    <script src="/js/animation.js" defer></script>
-    <script src="/js/color-mode.js" defer></script>
-    <script src="/js/project-slideshow.js" defer></script>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/animation.css" />
-    <link rel="stylesheet" href="/css/color-mode.css" />
+    <!-- <link rel="stylesheet" href="./css/animation-classes.css" /> -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
+    <script src="./js/animation.js" defer></script>
+    <script src="./js/color-mode.js" defer></script>
+    <script src="./js/project-slideshow.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/color-mode.css" />
   </head>
   <body>
     <div id="hero">
@@ -23,6 +24,181 @@
         <div id="hero__animation__img"></div>
       </div>
     </div>
+    <nav id="grid">
+      <div id="grid__tl">
+        <div id="grid__tl__btn">About</div>
+        <div id="grid__tl__content">
+          <div class="cards">
+            <div class="cards__content">
+              <article>
+                <img
+                  src="./assets/icons/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h2>Experience</h2>
+                <p>
+                  6 Months + <br />
+                  Developer <br />
+                  Experience
+                </p>
+              </article>
+              <p class="cards__content__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam, architecto?
+              </p>
+            </div>
+            <div class="cards__content">
+              <article>
+                <img
+                  src="./assets/icons/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h2>Education</h2>
+                <p>B. Sc. Mechanical Engineering</p>
+              </article>
+              <p class="cards__content__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam, architecto?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="grid__tr">
+        <div id="grid__tr__btn">Experience</div>
+        <div id="grid__tr__content">
+          <div class="cards experience">
+            <article class="experience__skill">
+              <h2>Frontend Development</h2>
+              <div>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>HTML</h2>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>CSS</h2>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>JavaScript</h2>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>TypeScript</h2>
+                  <p>Basic</p>
+                </div>
+              </div>
+            </article>
+            <article class="experience__skill">
+              <h2>Backend Development</h2>
+              <div>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>PostgreSQL</h2>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>Node JS</h2>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>Express JS</h2>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Checkmark icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>Git</h2>
+                  <p>Experienced</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div id="grid__bl">
+        <div id="grid__bl__btn">Projects</div>
+        <div id="grid__bl__content">
+          <div id="grid__bl__content__projects">
+            <div class="project p-1">
+              <img
+                class="project__img project-1"
+                src="assets/portfolio-projects/project-1-dark.png"
+                alt="Project 1"
+              />
+              <h2 class="project__title">Project One</h2>
+              <button
+                class="btn"
+                onclick="window.location.href='https://netlify.com'"
+              >
+                Demo
+              </button>
+              <button
+                class="btn"
+                onclick="window.location.href='https://github.com'"
+              >
+                GitHub
+              </button>
+            </div>
+            <button class="arrow" onclick="navigateProject(-1)">
+              &#10094;
+            </button>
+            <button class="arrow" onclick="navigateProject(1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div id="color-mode">
       <div id="toggle-button" class="icon"></div>
     </div>
