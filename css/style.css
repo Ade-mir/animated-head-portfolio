@@ -114,8 +114,8 @@ p {
   transform: rotate(-45deg) scale(1.05);
 }
 
-#grid__bl__btn:active,
-#grid__br__btn:active {
+#grid__tr__btn:active,
+#grid__bl__btn:active {
   transform: rotate(45deg) scale(1.05);
 }
 
@@ -246,11 +246,12 @@ article p {
   width: 15rem;
   bottom: 15vh;
   left: 0;
-  /* transform: translateX(-100vw) translateY(100vh); */
+  transform: translateX(-100vw) translateY(100vh);
 }
 
 .project {
-  width: 100%;
+  width: 70%;
+  display: flex;
   flex-wrap: wrap;
   border-radius: 2rem;
   overflow: hidden;
@@ -285,4 +286,59 @@ button {
   font-weight: 600;
 }
 
-.arrow
+.arrow {
+  border: var(--border);
+  width: 3rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0.2rem 0;
+}
+
+.btn,
+.arrow {
+  background: rgb(245, 245, 245);
+  color: #333;
+  transition: all 300ms ease;
+}
+
+.btn:active,
+.arrow:active {
+  background: var(--bg-alt);
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover,
+.arrow:hover {
+  cursor: pointer;
+}
+
+/* BOTTOM RIGHT CORNER */
+
+#grid__br__btn {
+  bottom: -11.5rem;
+  right: -11.5rem;
+  transform: rotate(-45deg);
+}
+
+#grid__br__content {
+  bottom: 0;
+  right: 0vw;
+  transform: translateX(100vw) translateY(100vh);
+}
+
+#grid__br__content div {
+  display: flex;
+  margin: 0.5rem auto;
+  gap: 1.2rem;
+  width: 17rem;
+}
+
+.contact-text {
+  color: var(--text);
+}
+
+.btn-contact {
+  border: var(--border);
+  border-radius: 2rem;
+}

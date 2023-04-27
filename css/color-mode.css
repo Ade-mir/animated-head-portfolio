@@ -1,5 +1,53 @@
 /* LIGHT MODE */
 
+body:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(../assets/face-animation-light/bl-1.png)
+    url(../assets/face-animation-light/bl-2.png)
+    url(../assets/face-animation-light/bl-3.png)
+    url(../assets/face-animation-light/bl-4.png)
+    url(../assets/face-animation-light/bl-5.png)
+    url(../assets/face-animation-light/tr-1.png)
+    url(../assets/face-animation-light/tr-2.png)
+    url(../assets/face-animation-light/tr-3.png)
+    url(../assets/face-animation-light/tr-4.png)
+    url(../assets/face-animation-light/tr-5.png)
+    url(../assets/face-animation-light/bl-1.png)
+    url(../assets/face-animation-light/bl-2.png)
+    url(../assets/face-animation-light/bl-3.png)
+    url(../assets/face-animation-light/bl-4.png)
+    url(../assets/face-animation-light/bl-5.png)
+    url(../assets/face-animation-light/br-1.png)
+    url(../assets/face-animation-light/br-2.png)
+    url(../assets/face-animation-light/br-3.png)
+    url(../assets/face-animation-light/br-4.png)
+    url(../assets/face-animation-light/br-5.png)
+    url(../assets/face-animation-dark/blw-1.png)
+    url(../assets/face-animation-dark/blw-2.png)
+    url(../assets/face-animation-dark/blw-3.png)
+    url(../assets/face-animation-dark/blw-4.png)
+    url(../assets/face-animation-dark/blw-5.png)
+    url(../assets/face-animation-dark/trw-1.png)
+    url(../assets/face-animation-dark/trw-2.png)
+    url(../assets/face-animation-dark/trw-3.png)
+    url(../assets/face-animation-dark/trw-4.png)
+    url(../assets/face-animation-dark/trw-5.png)
+    url(../assets/face-animation-dark/blw-1.png)
+    url(../assets/face-animation-dark/blw-2.png)
+    url(../assets/face-animation-dark/blw-3.png)
+    url(../assets/face-animation-dark/blw-4.png)
+    url(../assets/face-animation-dark/blw-5.png)
+    url(../assets/face-animation-dark/brw-1.png)
+    url(../assets/face-animation-dark/brw-2.png)
+    url(../assets/face-animation-dark/brw-3.png)
+    url(../assets/face-animation-dark/brw-4.png)
+    url(../assets/face-animation-dark/brw-5.png);
+}
+
 :root {
   /* Colors */
   --bg: #fff;
